@@ -1,10 +1,5 @@
-// 404
+const { join } = require('path');
 
-module.exports = (req, res, next) => {
-    const error = new Error('Not Found');
-    error.status = 404;
-    next(error);
-  };
-  
-  // 400 error handler
-  
+module.exports = (req, res) => {
+  res.sendFile(join(__dirname, '..', '..', '..', 'public', 'errors', '404.html'));
+};

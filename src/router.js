@@ -3,7 +3,10 @@ const express = require('express');
 const router = express.Router();
 
 const {
-  getLandingPage, getNews, clientError, serverError,
+  getLandingPage,
+  getNews, 
+  clientError, 
+  serverError,
 } = require('./controllers');
 
 router.get('/', getLandingPage);
