@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="shortcut icon" href="./assets/news-logo.png" type="image/x-icon">
+    <script type="text/javascript" src="./JS/dom.js" defer></script>
     <script type="text/javascript" src="./JS/script.js" defer></script>
     <title>News Page</title>
 </head>
 <body>
-    <!-- --------------------------- Start About Nav --------------------------- -->
-    <nav>
-        <img src="./assets/news-icon.png" alt="News-logo" class="news-logo">
+    <nav id="header">
+        <img src="./assets/logo.png" alt="News-logo" class="news-logo">
         <ul class="nav-items">
             <li class="nav-item">
                 <a href="#">Home</a>
@@ -31,8 +31,7 @@
             </li>
         </ul>
     </nav>
-    <!-- --------------------------- End About Nav --------------------------- -->
-    <!-- --------------------------- Start Body Sec  --------------------------- -->
+
     <section class="search-container" id="search">
         <h3 class="search-h3">Search your country news</h3>
         <div class="search-box">
@@ -45,8 +44,9 @@
 
     <section class="main">
         <aside class="news">
-            <h2>What is going on this world?</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat necessitatibus nulla dolorum nesciunt! Reiciendis placeat commodi accusantium maxime corrupti, enim earum, veritatis sapiente laborum eos fugit temporibus adipisci quos delectus.</p>
+            <h2><span style="color:red; font-size:34px; font-weight:bold">L</span>atest World News</h2>
+            <p>News websites are sites devoted to delivering the news in a different format than television, print or radio. News sites include sites that have a large variety of information which may not be considered "news" by all audiences, but may include entertainment, games, news that may not be current but is interesting, or other miscellaneous information.</p>
+            <hr style="width: 60%; box-shadow: 0 0 10px 1px black">
             <div class="cards"></div>
         </aside>
 
@@ -69,11 +69,90 @@
                 <li class="news-list-item"><a href="">Russian missiles strike Odessa port a day after grain deal, Ukraine says</a></li>
                 <li class="news-list-item"><a href="">Russian missiles strike Odessa port a day after grain deal, Ukraine says</a></li>
             </ul>
+
+            <div class="popular-tag">
+                <div class="tags">
+                <p class="tags-title">popular tags</p>
+                <div class="most">
+                    <p class="tag">Technology</p>
+                    <p class="tag">Buisness</p>
+                    <p class="tag">Science</p>
+                    <p class="tag">Sports</p>
+                </div>
+                </div>
+            </div>
+
+            <ul class="news-list" style="margin-top:120px">
+                <li class="news-list-item"><a href="">Russian missiles strike Odessa port a day after grain deal, Ukraine says</a></li>
+                <li class="news-list-item"><a href="">Russian missiles strike Odessa port a day after grain deal, Ukraine says</a></li>
+                <li class="news-list-item"><a href="">Russian missiles strike Odessa port a day after grain deal, Ukraine says</a></li>
+                <li class="news-list-item"><a href="">Russian missiles strike Odessa port a day after grain deal, Ukraine says</a></li>
+                <li class="news-list-item"><a href="">Russian missiles strike Odessa port a day after grain deal, Ukraine says</a></li>
+                <li class="news-list-item"><a href="">Russian missiles strike Odessa port a day after grain deal, Ukraine says</a></li>
+                <li class="news-list-item"><a href="">Russian missiles strike Odessa port a day after grain deal, Ukraine says</a></li>
+                <li class="news-list-item"><a href="">Russian missiles strike Odessa port a day after grain deal, Ukraine says</a></li>
+                <li class="news-list-item"><a href="">Russian missiles strike Odessa port a day after grain deal, Ukraine says</a></li>
+                <li class="news-list-item"><a href="">Russian missiles strike Odessa port a day after grain deal, Ukraine says</a></li>
+                <li class="news-list-item"><a href="">Russian missiles strike Odessa port a day after grain deal, Ukraine says</a></li>
+                <li class="news-list-item"><a href="">Russian missiles strike Odessa port a day after grain deal, Ukraine says</a></li>
+            </ul>
+
+            <div class="popular-tag">
+                <div class="tags">
+                <p class="tags-title">popular tags</p>
+                <div class="most">
+                    <p class="tag">Technology</p>
+                    <p class="tag">Buisness</p>
+                    <p class="tag">Science</p>
+                    <p class="tag">Sports</p>
+                </div>
+                </div>
+            </div>
         </aside>
     </section>
-    
-    <!-- --------------------------- End Body Sec  --------------------------- -->
-    <script src="https://use.fontawesome.com/cf3935a44e.js"></script>
 
+    <section class="footer">
+        <div class="boxes">
+            <div class="box">
+                <h3>Our Locations</h3>
+                <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i>Palestine</a>
+                <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i>Jerusalem</a>
+                <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i>Indonesia</a>
+                <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i>Switzerland</a>
+            </div>
+
+            <div class="box">
+                <h3>More Information</h3>
+                <a href="#"><i class="fa fa-link" aria-hidden="true"></i>Account Info</a>
+                <a href="#"><i class="fa fa-link" aria-hidden="true"></i>Privacy Policy</a>
+                <a href="#"><i class="fa fa-link" aria-hidden="true"></i>Payment Method</a>
+                <a href="#"><i class="fa fa-link" aria-hidden="true"></i>Our Services</a>
+            </div>
+
+            <div class="box">
+                <h3>Contact Info</h3>
+                <a href="#"><i class="fa fa-phone" aria-hidden="true"></i>+ 123-456-789-123-456</a>
+                <a href="#"><i class="fa fa-phone" aria-hidden="true"></i>+ 123-456-789-123-456</a>
+                <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></i>E-Commerce@gmail.com</a>
+                <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></i>ibtisamhemmo@gmail.com</a>
+            </div>
+        </div>
+
+        <div class="contact">
+            <i class="fa fa-whatsapp" aria-hidden="true"></i>
+            <i class="fa fa-facebook-official" aria-hidden="true"></i>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+        </div>
+    </section>
+            
+    <footer>
+        <p>Developed by Ibtisam Hemmo & Tareq Abu Aqlien</p>
+        <button class="btn btn-up">
+            <a style="color: #000" href="#"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+        </button>
+    </footer>
+
+    <script src="https://use.fontawesome.com/cf3935a44e.js"></script>
 </body>
 </html>
