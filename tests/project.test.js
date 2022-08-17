@@ -18,6 +18,7 @@ describe('Testing pages routers and its status codes', () => {
             .expect('Content-Type', /html/)
             .end((err, res) => {
                 if(err) return done(err);
+                expect(res.statusCode).toBe(404)
                 done();
             });
     });
