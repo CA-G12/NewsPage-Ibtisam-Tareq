@@ -25,20 +25,37 @@ function renderNews(data) {
       img.setAttribute('src' , `../assets/loading.jpg`)
     }
     
-    const h4 = document.createElement('h4');
-    h4.textContent = `${element.title}`
-
     const action = document.createElement('div');
     action.setAttribute('class' , 'action')
-
+    
     const seeMore = document.createElement('a');
     seeMore.setAttribute('href' , `${element.link}`)
     seeMore.textContent = "See More"
+    
+    const news_details = document.createElement('div')
+    news_details.setAttribute('class' , 'news_details')
 
+    const catagories = document.createElement('p')
+    catagories.setAttribute('class' , 'catagories')
+    if(element.category) {
+      catagories.textContent = `${element.category}`
+    } else {
+      catagories.textContent = "I WATCHED the excellent BBC1 Scotland Disclosure episode on Monday evening (August 15)."
+    }
+
+    const h4 = document.createElement('h4');
+    h4.textContent = `${element.title}`
+
+    const description = document.createElement('p')
+    description.setAttribute('class' , 'description')
+    description.textContent = `${element.description}`
+  
     action.appendChild(seeMore);
-
     card.appendChild(img)
-    card.appendChild(h4)
+    news_details.appendChild(catagories)
+    news_details.appendChild(h4)
+    news_details.appendChild(description)
+    card.appendChild(news_details)
     card.appendChild(action)
     cards.appendChild(card)
     
