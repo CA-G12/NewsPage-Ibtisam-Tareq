@@ -1,7 +1,8 @@
 const cards = document.querySelector('.cards');
 const searchInput = document.querySelector('.search-input');
+const searchBtn = document.querySelector('.search-btn');
 
-searchInput.addEventListener('click', () => {
+searchBtn.addEventListener('click', () => {
   fetch(`/search/${searchInput.value}`)
   .then((data) => data.json())
   .then((data) => renderNews(data.results))
