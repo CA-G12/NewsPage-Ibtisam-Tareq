@@ -65,7 +65,7 @@ describe('Testing pages routers and its status codes', () => {
             });
     });
 
-    test('Image router returns a status code of 200 and body of images.png', (done) => {
+    test('Image router returns a status code of 200 and image type of images.png', (done) => {
         supertest(router)
             .get("/assets/error.png")
             .expect(200)
@@ -76,7 +76,7 @@ describe('Testing pages routers and its status codes', () => {
             });
     });
 
-    test('Image router returns a status code of 200 and body of news-icon.png', (done) => {
+    test('Image router returns a status code of 200 and image type of news-icon.png', (done) => {
         supertest(router)
             .get("/assets/news-icon.png").expect(200).expect('Content-Type', 'image/png')
             .end((err, res) => {
