@@ -10,10 +10,11 @@ searchInput.addEventListener('click', () => {
 
 fetch('/news')
 .then((data) => data.json())
-.then((data) => console.log(data.results))
-.catch((err) => {console.log(err);});
+.then((data) => renderNews(data.results))
+.catch((err) => console.log(err));
 
 function renderNews(data) {
+  cards.innerHTML = '';
   data.forEach((element) => {
     const card = document.createElement('div');
     card.setAttribute('class' , 'card')
