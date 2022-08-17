@@ -6,7 +6,7 @@ News Page is a simple website for online news and information and it seeks to in
 
 ## Live Page :
 
-- [GO LIVE](https://)
+- [GO LIVE](https://newsapp-tareq-ibtisam.herokuapp.com/)
 
 ---
 
