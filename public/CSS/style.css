@@ -199,7 +199,6 @@ p{
     width: 300px;
     height: 250px;
     border-radius: 10px;
-    overflow: hidden;
 }
 
 .cards .card {
@@ -213,13 +212,6 @@ p{
     align-items: center;
     justify-content: flex-start;
     gap: 50px;
-}
-
-.cards .card img {
-    width: 300px;
-    height: 250px;
-    border-radius: 10px;
-    overflow: hidden;
 }
 
 .cards .card .action {
