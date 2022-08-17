@@ -1,15 +1,19 @@
 const cards = document.querySelector('.cards');
-console.log(cards);
+const searchInput = document.querySelector('.search-input');
+
+searchInput.addEventListener('click', () => {
+  fetch(`/search/${searchInput.value}`)
+  .then((data) => data.json())
+  .then((data) => renderNews(data.results))
+  .catch((err) => {console.log(err)});
+})
 
 fetch('/news')
 .then((data) => data.json())
-.then((data) => renderNews(data.results))
+.then((data) => console.log(data.results))
 .catch((err) => {console.log(err);});
 
 function renderNews(data) {
-  // console.log(typeof data);
-  console.log(data);
-  // data = JSON.parse(data)
   data.forEach((element) => {
     const card = document.createElement('div');
     card.setAttribute('class' , 'card')
@@ -20,7 +24,6 @@ function renderNews(data) {
     } else {
       img.setAttribute('src' , `../assets/loading.jpg`)
     }
-    
     
     const action = document.createElement('div');
     action.setAttribute('class' , 'action')
@@ -46,10 +49,8 @@ function renderNews(data) {
     const description = document.createElement('p')
     description.setAttribute('class' , 'description')
     description.textContent = `${element.description}`
-    
-
+  
     action.appendChild(seeMore);
-
     card.appendChild(img)
     news_details.appendChild(catagories)
     news_details.appendChild(h4)
@@ -58,9 +59,5 @@ function renderNews(data) {
     card.appendChild(action)
     cards.appendChild(card)
     
-  });
-
+  })
 }
-
-
-

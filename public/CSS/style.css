@@ -203,7 +203,12 @@ p{
 }
 
 .cards .card {
+<<<<<<< HEAD
+    /* position: relative; */
+    width: 250px;
+=======
     position: relative;
+>>>>>>> dc37c4364079536004b82bad6871ef74acb358e3
     height: fit-content;
     padding: 15px;
     margin: 10px;
@@ -222,7 +227,7 @@ p{
 }
 
 .cards .card .action {
-    position: absolute;
+    /* position: absolute; */
     top: 0;
     left: 0;
     border-radius: 10px;
