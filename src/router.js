@@ -12,7 +12,7 @@ const {
 
 router.get('/', getLandingPage);
 router.get('/news', getNews);
-// router.get('/search', searchNews);
+router.get('/search/:news', searchNews);
 
 router.use(clientError);
 router.use(serverError);
