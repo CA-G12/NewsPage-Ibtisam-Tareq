@@ -8,8 +8,211 @@
 }
 
 :root{
-    --brown: #9D5C0D;
-    --orange: #E5890A;
-    --beige: #F7D08A;
+    --teal: #1CD6CE;
+    --yellow: #FEDB39;
+    --red: #D61C4E;
     --navy: #31087B;
+    --white: #FFFfff;
+    --black: #000000;
 }
+
+/* Start Styling Index Page */
+
+nav{
+    background-color:#000;
+    color: #fff;
+    padding:  0px 60px;
+    width: 100wh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.news-logo{
+    width: 70px;
+    margin-right: 20px;
+    height: 70px;
+}
+
+.nav-items{
+    list-style: none;
+    margin: 0 70px;
+    display: flex;
+}
+
+.nav-item{
+    padding: 10px;
+    font-size: 19px;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.main{
+    height: 100vh;
+    display: flex;
+    padding: 10% 5%;
+
+}
+
+.news{
+    width: 90vw;
+}
+
+.news p{ 
+    max-width: 60vw;
+    margin-top: 30px;
+}
+
+.impo-news{
+    width: 30vw;
+}
+
+.news-list{
+    list-style: none;
+    margin-top:50px;
+}
+
+.news-list-item{
+    list-style: none;
+    margin: 10px;
+}
+
+.news-list-item a{
+    color: #000000;
+}
+
+
+.news-section{
+    padding: 7%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.news-section p{
+    max-width: 85%;
+    margin-top: 30px ;
+}
+
+.details{
+    padding: 7%;
+    padding-top:4%;
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 0;
+}
+h2{
+    margin-bottom:26px;
+    font-size:21px;
+}
+
+p{
+    line-height: 36px;
+    letter-spacing: 0.5px;
+}
+
+.details-down{
+    padding: 7%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 0;
+}
+/* End Styling Index Page */
+
+/* Start Styling Search */
+.search-h3{
+    padding: 20px;
+    text-align: center;
+}
+
+.search-box {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,50%);
+    background: var(--navy);
+    border-radius: 40px;
+    padding: 10px;
+    height:61px;
+}
+
+.search-box:hover > .search-input {
+    width: 440px;
+    padding: 0 6px;
+    right:50%;
+}
+
+.search-box:hover > .search-btn {
+    background: var(--red);
+    color : white;
+}
+
+.search-btn {
+    color: white;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--red);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.search-input {
+    border:none;
+    background: none;
+    outline:none;
+    float:left;
+    padding: 0;
+    color: white;
+    font-size:17px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+}
+
+@media screen and (max-width: 620px) {
+    .search-box:hover > .search-input {
+    width: 150px;
+    padding: 0 6px;
+    }
+}
+/* End styling search box */
+
+/* Start Styling Footer */
+footer{
+    margin-bottom: 50px;
+    text-align: center;
+    bottom: 0;
+    position: fixed;
+    left: 30%;
+}
+/* End Styling Footer */
+
+
+/* Start Styling Error Page */
+.error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.error__desc {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.error__msg {
+    color: #999;
+}
+/* End Styling Error Page */

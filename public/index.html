@@ -5,11 +5,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/style.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <script src="./JS/script.js" defer></script>
+    <link rel="shortcut icon" href="./assets/news-logo.png" type="image/x-icon">
+    <script type="text/javascript" src="./JS/script.js" defer></script>
     <title>News Page</title>
 </head>
 <body>
-    
+    <nav>
+        <img src="./assets/news-icon.png" alt="News-logo" class="news-logo">
+        <ul class="nav-items">
+            <li class="nav-item">
+                <a href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="./News.html">Politics</a>
+            </li>
+            <li class="nav-item">
+                <a href="./News.html">Sports</a>
+            </li>
+            <li class="nav-item">
+                <a href="./News.html">Technical</a>
+            </li>
+            <li class="nav-item">
+                <a href="./News.html">Tech</a>
+            </li>
+        </ul>
+    </nav>
+
+    <section class="search-container" id="search">
+        <h3 class="search-h3">Search your country news</h3>
+        <div class="search-box">
+            <input class="search-input" type="text" placeholder="Search">
+            <button class="search-btn" href="#">
+                <i class="fa fa-search"></i>
+            </button>
+        </div>
+    </section>
+
+    <section class="main">
+        <aside class="news">
+            <h2>What is going on this world?</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat necessitatibus nulla dolorum nesciunt! Reiciendis placeat commodi accusantium maxime corrupti, enim earum, veritatis sapiente laborum eos fugit temporibus adipisci quos delectus.</p>
+            <div class="cards">
+                <!-- <div class="card">
+                    <img src="./assets/news1.webp" alt="" />
+                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, eum?</h4>
+                    <div class="action">
+                        <a href="./detailed.html">See More</a>
+                    </div>
+                </div> -->
+            </div>
+        </aside>
+
+        <aside class="impo-news">
+            <h2>
+                Here you can browse the most readable news in our site.
+            </h2>
+            <ul class="news-list">
+                <li class="news-list-item">
+                    <a href="">Russian missiles strike Odessa port a day after grain deal, Ukraine says</a>
+                </li>
+            </ul>
+        </aside>
+
+    </section>
+
+    <footer>
+        <p> News-Page.com ©2022 Developed by Tariq Abu Aqlein and Ibtisam Hemmo</p>
+    </footer>
+
+    <script src="https://use.fontawesome.com/cf3935a44e.js"></script>
+
 </body>
 </html>
