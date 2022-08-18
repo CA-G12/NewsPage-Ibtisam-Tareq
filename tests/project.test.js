@@ -79,18 +79,7 @@ describe('Testing pages routers and its status codes', () => {
 
     test('Image router returns a status code of 200 and image type of news-icon.png', (done) => {
         supertest(router)
-            .get("/assets/news-icon.png").expect(200).expect('Content-Type', 'image/png')
-            .end((err, res) => {
-                if(err) return done(err);
-                expect(res.statusCode).toBe(200); 
-                done();
-            });
-    });
-
-    test('Image router returns a status code of 200 and body of tab-icon.png', (done) => {
-        supertest(router)
-            .get("/search:news")
-            .expect(200)
+            .get("/assets/logo.png").expect(200).expect('Content-Type', 'image/png')
             .end((err, res) => {
                 if(err) return done(err);
                 expect(res.statusCode).toBe(200); 
